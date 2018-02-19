@@ -6,6 +6,7 @@ import numpy as np
 #np.set_printoptions(threshold=np.nan)
 #pd.set_option('display.max_row', 1000)
 #pd.options.display.max_colwidth = 500
+
 employees_start = pd.read_csv("/Users/deepikamulchandani/Downloads/DataSets2_10012017/LDAP/2009-12.csv")
 employees_end = pd.read_csv("/Users/deepikamulchandani/Downloads/DataSets2_10012017/LDAP/2011-05.csv")
 employees_left = employees_start.merge(employees_end, indicator=True, how='outer')
