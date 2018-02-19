@@ -103,9 +103,8 @@ def count_empall_email():
                     all_emp.set_value(row2.Index,'Count of Job Emails',row2[10]+1)                    
 count_empall_email()
 
-
-
 all_emp
+                    
 employees_job_emails = all_emp[all_emp['Count of Job Emails']>0]
 employees_job_emails.shape[0]
 employees_job_emails.to_csv("/Users/deepikamulchandani/Downloads/DataSets2_10012017/AllEmpSendingJobEmailsfrompersonalDomains.csv",index=False)
